@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+}
+
+.content {
+  border: 5px solid black;
+  font-family: sans-serif;
+  color: rgb(66, 66, 66);
+  width: 800px;
+  margin: 15px auto;
+  position: relative;
+}
+
+h2,
+h3,
+.price {
+  color: black;
+  text-transform: uppercase;
+}
+
+.sale {
+  position: absolute;
+  top: -15px;
+  left: -34px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: small;
+  padding: 7px;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(244, 246, 248);
+  margin: 15px;
+  letter-spacing: -1px;
+}
+
+article > p > strong {
+  font-weight: 900;
+  color: black;
+  font-size: large;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.shipping {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(121, 121, 121);
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 7px;
+}
+
+.info-link {
+  color: rgb(0, 0, 0);
+}
+.info-link:hover {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+}
+
+.colors {
+  margin-top: 8px;
+}
+div:first-child {
+  background-color: red;
+  margin-left: 15px;
+}
+
+div:nth-child(2) {
+  background-color: blue;
+}
+
+div:nth-child(3) {
+  background-color: rgb(17, 241, 0);
+}
+
+div:nth-child(4) {
+  background-color: rgb(0, 0, 0);
+}
+
+div:nth-child(5) {
+  background-color: rgb(11, 154, 49);
+}
+
+div:last-child {
+  background-color: rgb(212, 133, 102);
+}
+
+.color {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 30px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+li {
+  list-style-type: square;
+  margin-bottom: 8px;
+}
+
+.add-cart {
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  border-top: 3px solid black;
+  padding: 9px;
+}
+
+.add-cart:hover {
+  color: black;
+  background-color: #ffffff;
+}

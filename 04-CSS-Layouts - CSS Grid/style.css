@@ -1,0 +1,302 @@
+* {
+  /* Use this to apply ALL element. It inherited all, unlike the body does */
+  margin: 0;
+  margin-left: 2px;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(68, 68, 68);
+  font-family: sans-serif;
+  border-top: 10px solid rgb(140, 140, 200);
+  margin-left: -3px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(105, 105, 189);
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  color: rgb(56, 46, 46);
+  background-color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+h3 + p::first-line {
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p { 
+  font-size: 16px;
+} 
+                        NOT EVECTIVE, MALAH ENCODE HTML STRUCTURE. USE ID!
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* For ID use #
+For CLASS use . */
+
+/* Recommdend to always use class */
+
+.main-header {
+  background-color: rgb(230, 230, 230);
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  background-color: rgb(230, 230, 230);
+  border-top: 5px solid rgb(187, 134, 192);
+  border-bottom: 5px solid rgb(187, 134, 192);
+  padding: 30px 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  /* You can use odd (bil. ganjil) even (genap) */
+  color: red;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.related {
+  list-style: none;
+  margin-left: -25px;
+}
+
+/* Styling a Links */
+
+a:link {
+  color: rgb(187, 134, 192);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(187, 134, 192);
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  color: rgb(187, 134, 192);
+}
+/* LVHA */
+
+.like-button {
+  position: absolute;
+  padding: 10px;
+  bottom: 50px;
+  right: 20px;
+}
+
+/* FOLATS */
+
+/* .author-img {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.author {
+  float: left;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  float: left;
+  width: 825px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+}
+
+footer {
+  clear: both;
+} */
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a:link {
+  margin-top: 0px;
+}
+
+.author-blox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin: 5px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: rgb(68, 68, 68);
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  flex: 1;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+article {
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
